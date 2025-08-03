@@ -73,6 +73,12 @@ nav a:hover {
   color: var(--accent-colour);
 }
 
+/* Highlight the active page in the navigation bar */
+nav a.active {
+  border-bottom: 2px solid var(--accent-colour);
+  padding-bottom: 0.2rem;
+}
+
 /* Hero section at the top of the page */
 .hero {
   padding-top: 120px; /* account for fixed nav */
