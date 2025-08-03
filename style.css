@@ -1,0 +1,189 @@
+/*
+ * Base stylesheet for Saumya Chauhan's CV website.
+ *
+ * This file defines the visual appearance of the site.  It uses
+ * modern CSS features such as flexbox and media queries to create
+ * a responsive layout that looks good on both desktop and mobile
+ * devices.  Feel free to tweak colours, fonts and spacing to suit
+ * your own taste.  The variables defined at the top make it easy
+ * to adjust the colour palette across the entire site.
+ */
+
+/* Colour palette */
+:root {
+  --primary-colour: #2e3a87;      /* deep blue for headings and buttons */
+  --secondary-colour: #f5f5f5;    /* light grey background */
+  --accent-colour: #e45a84;       /* pink accent for links and highlights */
+  --text-colour: #333333;         /* dark grey for body text */
+  --nav-background: #ffffff;      /* navigation bar background */
+  --nav-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: var(--text-colour);
+  background-color: var(--secondary-colour);
+}
+
+/* Navigation bar */
+nav {
+  background-color: var(--nav-background);
+  box-shadow: 0 2px 4px var(--nav-shadow);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-colour);
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--accent-colour);
+}
+
+/* Hero section at the top of the page */
+.hero {
+  padding-top: 100px; /* account for fixed nav */
+  padding-bottom: 60px;
+  text-align: center;
+  background-color: var(--nav-background);
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-colour);
+}
+
+.hero p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.hero .contact-links a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: var(--primary-colour);
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s ease, color 0.2s ease;
+}
+
+.hero .contact-links a:hover {
+  color: var(--accent-colour);
+  border-bottom-color: var(--accent-colour);
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--primary-colour);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: var(--accent-colour);
+}
+
+/* Main content sections */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+section h2 {
+  color: var(--primary-colour);
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--primary-colour);
+  display: inline-block;
+  padding-bottom: 0.2rem;
+}
+
+/* Layout for lists */
+.entry {
+  margin-bottom: 1.5rem;
+}
+
+.entry h3 {
+  color: var(--primary-colour);
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.entry .date-location {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #666666;
+  margin-bottom: 0.4rem;
+}
+
+.entry ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
+
+.entry ul li {
+  margin-bottom: 0.3rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--nav-background);
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #e6e6e6;
+  font-size: 0.9rem;
+  color: #777777;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  nav ul {
+    flex-wrap: wrap;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+  }
+  main {
+    padding: 1.5rem 0.5rem;
+  }
+}

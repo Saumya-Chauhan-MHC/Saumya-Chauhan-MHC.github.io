@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!--
+  Saumya Chauhan personal CV website
+
+  This single–page static website is inspired by Anagha Satish’s
+  GitHub pages resume.  It uses semantic HTML and a simple
+  responsive layout defined in style.css.  Each section of the CV
+  appears on this page and can be reached by clicking the links in
+  the navigation bar.  To customise it for your own CV, edit the
+  content inside the <section> blocks and update the contact
+  information in the hero section.  To deploy the site on GitHub
+  Pages, create a new repository, commit these files and enable
+  GitHub Pages in the repository settings.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saumya Chauhan – Curriculum Vitae</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#presentations">Presentations</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero section introducing the individual -->
+    <header class="hero">
+      <h1>Saumya Chauhan</h1>
+      <p>Computer Science undergraduate at the California Institute of Technology<br />Minor in Information and Data Science</p>
+      <p>Fremont, California, USA</p>
+      <div class="contact-links">
+        <a href="mailto:saumya.s.chau@gmail.com">saumya.s.chau@gmail.com</a>
+        <span>|</span>
+        <a href="tel:+15105980016">(510) 598‑0016</a>
+        <span>|</span>
+        <a href="https://www.linkedin.com/in/saumya-chauhan-3160301b3" target="_blank">LinkedIn</a>
+        <span>|</span>
+        <a href="https://github.com/Saumya-Chauhan-MHC" target="_blank">GitHub</a>
+      </div>
+      <!-- Link to download the PDF CV -->
+      <a class="button" href="Saumya_Chauhan_CV_2025.pdf" download>Download CV (PDF)</a>
+    </header>
+
+    <main>
+      <!-- About section -->
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I am a passionate researcher and engineer interested in computer
+          vision, machine learning and multimodal reasoning.  At Caltech I
+          explore how large language and vision models can help us solve
+          complex problems – from identifying misinformation online to
+          supporting caregivers and discovering dark matter.  I thrive in
+          collaborative, interdisciplinary environments and enjoy turning
+          cutting‑edge research into real‑world impact.
+        </p>
+      </section>
+
+      <!-- Education section -->
+      <section id="education">
+        <h2>Education</h2>
+        <div class="entry">
+          <h3>California Institute of Technology</h3>
+          <div class="date-location">Pasadena, CA · Sept 2021 – June 2025</div>
+          <ul>
+            <li>BS in Computer Science; Minor in Information and Data Science</li>
+            <li>GPA: 4.1/4.0</li>
+            <li>Relevant coursework: Data Structures and Algorithms, Computer Systems, Machine Learning and Data Mining, Large Language &amp; Vision Models, 3D Deep Learning, GPU Programming, Software Design, Microcontrollers, Networks: Structure and Economics</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Experience section -->
+      <section id="experience">
+        <h2>Experience</h2>
+
+        <div class="entry">
+          <h3>Undergraduate Researcher – Networks Lab, Caltech</h3>
+          <div class="date-location">Pasadena, CA · Apr 2025 – present</div>
+          <ul>
+            <li>Developed a multimodal Reddit‑virality pipeline combining DistilBERT for misinformation titles, CLIP + Random Forest for synthetic images and DSU clustering to understand content spread.</li>
+            <li>Uncovered multimodal amplification: mixed misinformation and generative AI cascades travel 10× deeper and persist approximately 12× longer than prior classes【754279175787085†L30-L37】.</li>
+            <li>Introduced a Virality Attention Index with a hybrid LightGBM early‑warning screen to help moderators curb harmful synthetic media; results submitted to MIT URTC 2025.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <h3>Co‑Founder &amp; Technical Lead – EchoBlue</h3>
+          <div class="date-location">Pasadena, CA · Jan 2025 – present</div>
+          <ul>
+            <li>Prototyped EchoBlue, an AI mobile assistant for caregivers of children with autism that fuses pose‑sequence video and IEP documents in a dual‑encoder model to track milestones, detect triggers and serve personalised strategy scripts.</li>
+            <li>Implemented continual‑learning feedback to refine recommendations for caregivers.</li>
+            <li>Conducted market validation with 27 customer interviews across 11 stakeholder groups, built a financial model and secured US$20 k in seed funding as a finalist in the Bill Gross Entrepreneurship Competition 2025.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <h3>Undergraduate Researcher – Computer Vision Lab, Caltech</h3>
+          <div class="date-location">Pasadena, CA · Jan 2025 – present</div>
+          <ul>
+            <li>Co‑created ITTO, a point‑tracking benchmark capturing extreme camera shake, non‑rigid articulation, parallax and object reappearance, extending motion diversity beyond existing datasets.</li>
+            <li>Built a two‑stage annotation workflow: crowdsourced labels via MTurk followed by expert frame refinement; designed an object‑centric query generator combining Molmo prompts with SAM2 masks to reduce saliency bias under occlusions.</li>
+            <li>Benchmarked state‑of‑the‑art trackers, revealing steep accuracy drops under complex motion; manuscript submitted to NeurIPS 2025.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <h3>Undergraduate Researcher – Computational Cameras Lab, Caltech</h3>
+          <div class="date-location">Pasadena, CA · Sept 2024 – present</div>
+          <ul>
+            <li>Developed a multimodal variational diffusion model for reconstructing dark‑matter maps by jointly processing stellar‑mass, lensing shear and fast‑radio‑burst maps.</li>
+            <li>Achieved high‑fidelity reconstructions compared with CAMELS simulations and outperformed single‑modality baselines; manuscript submitted to the 2025 AI + Science Caltech–University of Chicago Conference.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <h3>Computer Vision Research Intern – Verkada</h3>
+          <div class="date-location">San Mateo, CA · Jan 2025 – Mar 2025</div>
+          <ul>
+            <li>Designed and deployed a real‑time threat‑detection pipeline using InternVideo2 foundation models: uniform frame sampling, optional ByteTrack + YOLOv8 person‑track cropping, a distilled one‑billion‑parameter backbone and a lightweight classifier head that meets on‑camera latency budgets.</li>
+            <li>Created the Verkada‑Threat‑V1 corpus (~20 k clips) and a reproducible research suite with custom loaders, a fine‑tuning engine and per‑class average‑precision/precision–recall analysis.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <h3>Machine Learning Engineer Intern – DoorDash</h3>
+          <div class="date-location">Sunnyvale, CA · Jun 2024 – Sept 2024</div>
+          <ul>
+            <li>Built an end‑to‑end feature‑importance workflow for LightGBM and PyTorch models that prunes low‑value features in the ML Workbench’s central store, reducing feature‑store calls and costs by 5%.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <h3>Software Development Intern – Amazon</h3>
+          <div class="date-location">San Diego, CA · Jun 2023 – Sept 2023</div>
+          <ul>
+            <li>Built a Kotlin data‑transformation Lambda for AWS Action Planner that eliminates legacy Lifecycle Event Orchestrators from the data‑transformation pipeline.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <h3>Software Engineering Intern – Cisco AppDynamics</h3>
+          <div class="date-location">San Francisco, CA · Jun 2022 – Sept 2022</div>
+          <ul>
+            <li>Designed the Cisco Secure Application user interface to reduce security exposure risk and accelerate the analysis of more than 1 000 software vulnerabilities.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Publications section -->
+      <section id="publications">
+        <h2>Publications</h2>
+        <div class="entry">
+          <ul>
+            <li><strong>When GenAI Meets Fake News: Understanding Image Cascade Dynamics on Reddit.</strong> S. Chauhan, M. Hong, M. Vazhaeparambil. Submitted to MIT URTC 2025 (May 2025).</li>
+            <li><strong>Is This Tracker On? A Benchmark Protocol for Dynamic Tracking (ITTO).</strong> I. Demler, S. Chauhan, G. Gkioxari. Submitted to NeurIPS 2025 (May 2025).</li>
+            <li><strong>Using Multi‑Modal Diffusion Models to Reconstruct Dark Matter Fields.</strong> S. Chauhan, A. Chandrashekar, E. Patel, M. Vazhaeparambil. Submitted to the AI + Science Caltech–University of Chicago Conference 2025 (Nov 2024).</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Presentations section -->
+      <section id="presentations">
+        <h2>Presentations</h2>
+        <div class="entry">
+          <ul>
+            <li>“When GenAI Meets Fake News: Understanding Image Cascade Dynamics on Reddit,” CMS + IST Meeting of the Minds 2025 (Caltech), May 2025.</li>
+            <li>“EchoBlue: AI Assistant for Caregivers of Children with Autism,” 2nd Annual Nexus Horizon Builder SoCal Showcase, Apr 2025.</li>
+            <li>“EchoBlue: AI Assistant for Caregivers of Children with Autism,” Bill Gross Entrepreneurship Competition, Apr 2025.</li>
+            <li>“Real‑Time Threat Detection on Edge Cameras with InternVideo2 Foundation Models,” Verkada Spring 2025 Tech Fair, Mar 2025.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Awards section -->
+      <section id="awards">
+        <h2>Awards</h2>
+        <div class="entry">
+          <ul>
+            <li>Bill Gross Entrepreneurship Pitch Competition — 2nd Place, 2025.</li>
+            <li>MLH “Hack Empowered” Best Educational App, 2022.</li>
+            <li>Housner Student Fund for Outstanding Undergraduate Research, 2022.</li>
+            <li>Discover ServiceNow Fly‑Out Program — Selected Participant, 2023.</li>
+            <li>Lam Research Core Values Scholarship, 2021.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Leadership and Extracurricular section -->
+      <section id="leadership">
+        <h2>Extracurricular &amp; Leadership</h2>
+        <div class="entry">
+          <ul>
+            <li>Treasurer &amp; Co‑Founder, Caltech Entrepreneurship Club.</li>
+            <li>Vice President &amp; Co‑Founder, Caltech Large Language Models Club.</li>
+            <li>Captain, Caltech Women’s Basketball Team.</li>
+            <li>Head Health Advocate, Caltech Lloyd House.</li>
+            <li>Food Representative, Caltech Lloyd House.</li>
+            <li>Undergraduate Head, Caltech OASIS Indian Cultural Club.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>If you would like to get in touch, feel free to reach out via email or connect on LinkedIn.</p>
+        <p>
+          <strong>Email:</strong> <a href="mailto:saumya.s.chau@gmail.com">saumya.s.chau@gmail.com</a><br />
+          <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/saumya-chauhan-3160301b3" target="_blank">linkedin.com/in/saumya-chauhan-3160301b3</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2025 Saumya Chauhan.  Built with ❤ and hosted on GitHub Pages.
+    </footer>
+  </body>
+</html>
