@@ -1,330 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Personal research website for Saumya Chauhan, a Caltech computer science student exploring multi‑modal AI, diffusion models, and misinformation detection."
-    />
-    <title>Saumya Chauhan • Research</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-80qTxKpJS0v78qE2u31EKOwW0nh+Q0b4TlYHCcKn6EvGWI12+DPePcbRW9yEYj0cm4XUbwprWFCXUJ7RxyLI3w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar" role="navigation" aria-label="Primary">
-      <div class="container nav-container">
-        <div class="nav-left">
-          <a href="#top" class="nav-brand">Saumya Chauhan</a>
-        </div>
-        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-          <span class="hamburger"></span>
-          <span class="hamburger"></span>
-          <span class="hamburger"></span>
-        </button>
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#research">Research</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#presentations">Presentations</a></li>
-          <li><a href="#awards">Awards</a></li>
-          <li><a href="#extracurricular">Extracurricular</a></li>
-        </ul>
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-          <i class="fa-solid fa-moon"></i>
-        </button>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saumya Chauhan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Hero Section -->
+  <header class="header">
+    <h1>Saumya Chauhan</h1>
+    <p>Computer Science & Data Science • California Institute of Technology</p>
+    <p>
+      📍 Fremont, CA •
+      <a href="mailto:saumya.s.chau@gmail.com">saumya.s.chau@gmail.com</a> •
+      <a href="https://github.com/Saumya-Chauhan-MHC">GitHub</a> •
+      <a href="https://www.linkedin.com/in/saumya-chauhan-3160301b3">LinkedIn</a>
+    </p>
+  </header>
 
-    <!-- Hero section -->
-    <header class="hero" id="top" role="banner">
-      <div class="hero-overlay"></div>
-      <div class="container hero-container">
-        <div class="hero-left">
-          <!-- Profile card -->
-          <div class="profile-card">
-            <div class="avatar" aria-hidden="true"></div>
-            <h1>Saumya Chauhan</h1>
-            <p class="subtitle">Computer Science Major<br />California Institute of Technology</p>
-            <div class="contact-icons" aria-label="Contact links">
-              <a href="mailto:saumya.s.chau@gmail.com" class="contact-icon" aria-label="Email">
-                <i class="fa-solid fa-envelope"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/saumya-chauhan-3160301b3" target="_blank" rel="noopener" class="contact-icon" aria-label="LinkedIn">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a href="https://github.com/Saumya-Chauhan-MHC" target="_blank" rel="noopener" class="contact-icon" aria-label="GitHub">
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </div>
-            <a href="Saumya_Chauhan_CV.pdf" class="btn primary" download>Download CV</a>
-          </div>
-        </div>
-        <div class="hero-right">
-          <p class="tagline">Exploring multimodal AI, cosmic mysteries and human‑centered technology.</p>
-        </div>
-      </div>
-    </header>
+  <!-- About / Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>California Institute of Technology</strong> (Sept&nbsp;2021 – June&nbsp;2025)<br>
+      B.S. in Computer Science, Minor in Information &amp; Data Science<br>
+      GPA: 4.1/4.0<br>
+      Coursework: Data Structures &amp; Algorithms, Machine Learning &amp; Data Mining, Large Language &amp; Vision Models,
+      3D Deep Learning, GPU Programming, Networks, Microcontrollers【123†source】.</p>
+  </section>
 
-    <main>
-      <!-- About Section -->
-      <section id="about" class="section">
-        <div class="container">
-          <h2>About</h2>
-          <p>
-            I’m a final‑year Computer Science student at the California
-            Institute of Technology (Caltech) passionate about building AI systems that
-            merge text, images and networks to solve meaningful problems. My research interests range from human–computer
-            interaction to multimodal misinformation detection and cosmological simulations. In the Caltech Networks Lab,
-            I developed a Reddit virality pipeline combining a distilled version of BERT—40 % smaller than BERT while
-            retaining 97 % of its language understanding capabilities and running 60 % faster <sup><a href="【568372207855747†L52-L60】" target="_blank">[1]</a></sup>—with
-            the CLIP vision–language model, which uses separate encoders for images and text and excels at zero‑shot
-            recognition <sup><a href="【861785126560129†L333-L339】" target="_blank">[2]</a></sup>.
-          </p>
-          <p>
-            Beyond understanding how synthetic media spreads online, I explore multimodal diffusion models that
-            reconstruct dark matter maps from astrophysical observations
-            <sup><a href="【598825071329080†L53-L60】" target="_blank">[3]</a></sup> and create assistive technologies
-            for caregivers of children with autism. Whether modelling cosmic webs or designing smartphone apps, I am
-            motivated by a desire to translate cutting‑edge research into tools that benefit society.
-          </p>
-        </div>
-      </section>
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>Undergraduate Researcher, Networks Lab (Caltech)</strong> – Apr&nbsp;2025–Present.<br>
+        Built a multimodal Reddit-virality pipeline using DistilBERT, CLIP, and clustering; proposed a Virality Attention Index【123†source】.</li>
+      <li><strong>Co‑Founder &amp; Technical Lead, EchoBlue</strong> – Jan&nbsp;2025–Present.<br>
+        Developed EchoBlue, an AI app for autism caregivers; integrated pose sequences &amp; IEP docs; secured $20&nbsp;K seed funding【123†source】.</li>
+      <li><strong>Undergraduate Researcher, Computer Vision Lab (Caltech)</strong> – Jan&nbsp;2025–Present.<br>
+        Co-created ITTO, a tracking benchmark with complex motion and occlusions; prepared NeurIPS submission.</li>
+      <li><strong>Undergraduate Researcher, Computational Cameras Lab (Caltech)</strong> – Sept&nbsp;2024–Present.<br>
+        Built a multimodal diffusion model to reconstruct dark-matter maps; compared against CAMELS simulations.</li>
+      <li><strong>Computer Vision Research Intern, Verkada</strong> – Jan–Mar&nbsp;2025.<br>
+        Designed a real-time threat-detection pipeline and created a 20K-clip dataset.</li>
+      <li><strong>Machine Learning Engineer Intern, DoorDash</strong> – Jun–Sept&nbsp;2024.<br>
+        Built feature-importance workflows for LightGBM/PyTorch models; cut feature-store costs by 5%.</li>
+      <li><strong>Software Development Intern, Amazon</strong> – Jun–Sept&nbsp;2023.<br>
+        Developed a Kotlin Lambda to simplify AWS Action Planner data pipelines.</li>
+      <li><strong>Software Engineering Intern, Cisco AppDynamics</strong> – Jun–Sept&nbsp;2022.<br>
+        Redesigned Secure Application UI to reduce security exposure and improve vulnerability analysis.</li>
+    </ul>
+  </section>
 
-      <!-- Education Section -->
-      <section id="education" class="section alt">
-        <div class="container">
-          <h2>Education</h2>
-          <ul class="timeline">
-            <li>
-              <div class="timeline-item">
-                <h3>California Institute of Technology</h3>
-                <span class="timeline-duration">Sept 2021 – June 2025</span>
-                <p>B.S. in Computer Science, minor in Information & Data Science.</p>
-                <ul>
-                  <li>GPA: 4.1/4.0</li>
-                  <li>Selected coursework: Data Structures &amp; Algorithms, Machine Learning &amp; Data Mining, 3D Deep
-                    Learning, GPU Programming, Networks.</li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
+  <!-- Publications -->
+  <section id="publications">
+    <h2>Publications</h2>
+    <ul>
+      <li>“When GenAI Meets Fake News: Understanding Image Cascade Dynamics on Reddit,” submitted to MIT URTC&nbsp;2025.</li>
+      <li>“Is This Tracker On? A Benchmark Protocol for Dynamic Tracking (ITTO),” submitted to NeurIPS&nbsp;2025.</li>
+      <li>“Using Multi-Modal Diffusion Models to Reconstruct Dark Matter Fields,” submitted to AI+Science Conference&nbsp;2025.</li>
+    </ul>
+  </section>
 
-      <!-- Experience Section -->
-      <section id="experience" class="section">
-        <div class="container">
-          <h2>Experience</h2>
-          <div class="experience-list">
-            <article class="experience">
-              <h3>Undergraduate Researcher, Networks Lab, Caltech</h3>
-              <span class="location">Pasadena, CA • Apr 2025 – Present</span>
-              <p>
-                Developed a multimodal Reddit‑virality pipeline combining DistilBERT (misinformation titles), CLIP
-                embeddings with a random‑forest classifier for generated images, and clustering based on diffusion
-                state updates. Discovered that misinformation paired with generative images spreads 10× deeper and
-                lasts ~12× longer than other content. Proposed a Virality Attention Index and LightGBM screening tool
-                to help moderators curb harmful cascades.
-              </p>
-            </article>
-            <article class="experience">
-              <h3>Co‑Founder &amp; Technical Lead, EchoBlue</h3>
-              <span class="location">Pasadena, CA • Jan 2025 – Present</span>
-              <p>
-                Prototyped EchoBlue, an AI assistant for caregivers of children with autism. The mobile app fuses
-                pose‑sequence video and individualized education plan (IEP) documents in a dual‑encoder model to
-                track developmental milestones, detect triggers and deliver personalized coaching. Conducted
-                market validation with 27 interviews across 11 stakeholder groups and helped secure $20 K seed funding as
-                a finalist in the Bill Gross Entrepreneurship Competition
-                <sup><a href="【752847658422731†L259-L263】" target="_blank">[4]</a></sup>.
-              </p>
-            </article>
-            <article class="experience">
-              <h3>Undergraduate Researcher, Computer Vision Lab, Caltech</h3>
-              <span class="location">Pasadena, CA • Jan 2025 – Present</span>
-              <p>
-                Co‑created ITTO, a benchmark for tracking objects in videos under extreme camera shake, non‑rigid
-                articulation and occlusions. Designed a two‑stage annotation workflow and an object‑centric query
-                generator using segmentation masks to reduce saliency bias. Benchmarked state‑of‑the‑art trackers and
-                drafted a manuscript for NeurIPS 2025.
-              </p>
-            </article>
-            <article class="experience">
-              <h3>Undergraduate Researcher, Computational Cameras Lab, Caltech</h3>
-              <span class="location">Pasadena, CA • Sept 2024 – Present</span>
-              <p>
-                Developing a conditional diffusion model that jointly processes stellar‑mass, lensing shear and
-                fast‑radio‑burst maps to reconstruct dark‑matter fields. Achieved high‑fidelity reconstructions
-                compared to state‑of‑the‑art simulations and submitted results to the 2025 AI + Science Caltech–University of Chicago Conference.
-              </p>
-            </article>
-            <article class="experience">
-              <h3>Research Intern, Computer Vision &amp; AI Search, Verkada</h3>
-              <span class="location">San Mateo, CA • Jan 2025 – Mar 2025</span>
-              <p>
-                Designed a real‑time threat detection pipeline by adapting InternVideo2 foundation models. Created the
-                Verkada‑Threat‑V1 corpus (~20 k clips) and implemented a reproducible evaluation suite with per‑class
-                precision–recall metrics.
-              </p>
-            </article>
-            <article class="experience">
-              <h3>Machine Learning Engineer Intern, DoorDash</h3>
-              <span class="location">Sunnyvale, CA • Jun 2024 – Sept 2024</span>
-              <p>Developed an end‑to‑end feature importance workflow that prunes low‑value features in the ML Workbench,
-                reducing feature‑store calls and costs by 5 %.</p>
-            </article>
-            <article class="experience">
-              <h3>Software Development Intern, Amazon</h3>
-              <span class="location">San Diego, CA • Jun 2023 – Sept 2023</span>
-              <p>Built a Kotlin data‑transformation Lambda for AWS Action Planner, simplifying the data pipeline by
-                removing Lifecycle Event Orchestrators.</p>
-            </article>
-            <article class="experience">
-              <h3>Software Engineering Intern, Cisco AppDynamics</h3>
-              <span class="location">San Francisco, CA • Jun 2022 – Sept 2022</span>
-              <p>Designed Cisco Secure Application’s user interface to reduce security exposure risk and speed up analysis
-                of over 1 k software vulnerabilities.</p>
-            </article>
-          </div>
-        </div>
-      </section>
+  <!-- Presentations -->
+  <section id="presentations">
+    <h2>Presentations</h2>
+    <ul>
+      <li>MIT URTC&nbsp;2025 – “When GenAI Meets Fake News.”</li>
+      <li>Nexus Horizon Showcase – “EchoBlue.”</li>
+      <li>Bill Gross Entrepreneurship Competition – “EchoBlue.”</li>
+      <li>Verkada Spring Tech Fair – “Edge Camera Threat Detection.”</li>
+    </ul>
+  </section>
 
-      <!-- Research Section -->
-      <section id="research" class="section alt">
-        <div class="container">
-          <h2>Research Projects</h2>
-          <div class="projects-grid">
-            <div class="project">
-              <img src="static/img/ai_network.png" alt="Visualisation of neural networks" />
-              <h3>Multimodal Virality Analysis</h3>
-              <p>
-                Our project investigates how misinformation and synthetic images spread across Reddit. By combining
-                compact language models with vision–language encoders, we uncover cascading dynamics that amplify
-                harmful content and build early‑warning indicators for moderators.
-              </p>
-            </div>
-            <div class="project">
-              <img src="static/img/cosmic.png" alt="Cosmic web simulation" />
-              <h3>Dark‑Matter Reconstruction</h3>
-              <p>
-                We develop conditional diffusion models that map observations of stars and lensing shear to underlying
-                dark‑matter fields. These generative models produce accurate cosmic reconstructions while marginalizing
-                over cosmological uncertainties.
-              </p>
-            </div>
-            <div class="project">
-              <img src="static/img/echoblue.png" alt="Abstract representation of autism support" />
-              <h3>EchoBlue: Autism Care Assistant</h3>
-              <p>
-                EchoBlue is an AI‑powered mobile app for caregivers of children with autism. It fuses video posture
-                sequences and educational plan documents to track developmental milestones, detect potential triggers and
-                deliver personalized coaching. Learn more on the <a href="echoblue.html">project page</a>.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+  <!-- Awards -->
+  <section id="awards">
+    <h2>Awards</h2>
+    <ul>
+      <li>Bill Gross Entrepreneurship Pitch Competition – 2nd Place (2025)</li>
+      <li>Discover ServiceNow Fly-Out Program – Selected Participant (2023)</li>
+      <li>Housner Student Fund for Outstanding Undergraduate Research (2022)</li>
+      <li>Lam Research Core Values Scholarship (2021)</li>
+      <li>MLH “Hack Empowered” Best Educational App (2022)</li>
+    </ul>
+  </section>
 
-      <!-- Publications Section -->
-      <section id="publications" class="section">
-        <div class="container">
-          <h2>Publications</h2>
-          <ul class="pub-list">
-            <li>
-              S. Chauhan, M. Hong, M. Vazhaeparambil, “When GenAI Meets Fake News: Understanding Image Cascade Dynamics
-              on Reddit,” submitted to MIT URTC 2025.
-            </li>
-            <li>
-              I. Demler, S. Chauhan, G. Gkioxari, “Is This Tracker On? A Benchmark Protocol for Dynamic Tracking (ITTO),”
-              submitted to NeurIPS 2025.
-            </li>
-            <li>
-              S. Chauhan, A. Chandrashekar, E. Patel, M. Vazhaeparambil, “Using Multi‑Modal Diffusion Models to
-              Reconstruct Dark Matter Fields,” submitted to the Caltech–University of Chicago AI + Science
-              Conference 2025.
-            </li>
-          </ul>
-        </div>
-      </section>
+  <!-- Extracurricular & Leadership -->
+  <section id="extracurricular">
+    <h2>Extracurricular &amp; Leadership</h2>
+    <ul>
+      <li>Treasurer &amp; Co‑Founder, Caltech Entrepreneurship Club</li>
+      <li>Vice President &amp; Co‑Founder, Caltech Large Language Models Club</li>
+      <li>Captain, Caltech Women’s Basketball Team</li>
+      <li>Head Health Advocate, Caltech Lloyd House</li>
+      <li>Food Representative, Caltech Lloyd House</li>
+      <li>Undergraduate Head, Caltech OASIS Indian Cultural Club</li>
+    </ul>
+  </section>
 
-      <!-- Presentations Section -->
-      <section id="presentations" class="section alt">
-        <div class="container">
-          <h2>Presentations</h2>
-          <ul class="present-list">
-            <li>“When GenAI Meets Fake News: Understanding Image Cascade Dynamics on Reddit,” presented at CMS + IST Meeting of the Minds 2025 (Caltech).</li>
-            <li>“EchoBlue: AI Assistant for Caregivers of Children with Autism,” presented at Nexus Horizon Builder SoCal Showcase 2025.</li>
-            <li>“EchoBlue: AI Assistant for Caregivers of Children with Autism,” pitched at the Bill Gross Entrepreneurship Competition 2025.</li>
-            <li>“Real‑Time Threat Detection on Edge Cameras with InternVideo2 Foundation Models,” Verkada Spring 2025 Tech Fair.</li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Awards Section -->
-      <section id="awards" class="section">
-        <div class="container">
-          <h2>Awards &amp; Honors</h2>
-          <ul class="awards-list">
-            <li>2nd Place – Bill Gross Entrepreneurship Pitch Competition 2025.</li>
-            <li>Housner Student Fund for Outstanding Undergraduate Research 2022.</li>
-            <li>MLH “Hack Empowered” Best Educational App 2022.</li>
-            <li>Lam Research Core Values Scholarship 2021.</li>
-            <li>Discover ServiceNow Fly‑Out Program – Selected Participant 2023.</li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Extracurricular Section -->
-      <section id="extracurricular" class="section alt">
-        <div class="container">
-          <h2>Extracurricular &amp; Leadership</h2>
-          <ul class="extra-list">
-            <li>Treasurer &amp; Co‑founder, Caltech Entrepreneurship Club.</li>
-            <li>Vice President &amp; Co‑founder, Caltech Large Language Models Club.</li>
-            <li>Captain, Caltech Women’s Basketball Team.</li>
-            <li>Head Health Advocate, Caltech Lloyd House.</li>
-            <li>Food Representative, Caltech Lloyd House.</li>
-            <li>Undergraduate Head, Caltech OASIS Indian Cultural Club.</li>
-          </ul>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footnotes -->
-    <footer class="footnotes">
-      <div class="container">
-        <hr />
-        <ol>
-          <li>
-            <a href="【568372207855747†L52-L60】" target="_blank">[1]</a> DistilBERT reduces the size of a
-            BERT model by 40 %, retains 97 % of its language understanding capabilities and is 60 % faster
-            【568372207855747†L52-L60】.
-          </li>
-          <li>
-            <a href="【861785126560129†L333-L339】" target="_blank">[2]</a> CLIP is a vision–language model that
-            uses separate encoders for images and text and excels at zero‑shot recognition【861785126560129†L333-L339】.
-          </li>
-          <li>
-            <a href="【598825071329080†L53-L60】" target="_blank">[3]</a> Diffusion generative models can
-            reconstruct dark‑matter fields from stellar mass maps while marginalizing over cosmological
-            uncertainties【598825071329080†L53-L60】.
-          </li>
-          <li>
-            <a href="【752847658422731†L259-L263】" target="_blank">[4]</a> The Bill Gross Prize for
-            Entrepreneurship is a business plan competition where ten finalist teams—eight undergraduate and two
-            graduate—pitch to industry judges【752847658422731†L259-L263】.
-          </li>
-        </ol>
-      </div>
-    </footer>
-  </body>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Saumya Chauhan • <a href="Saumya_Chauhan_CV.pdf" download>Download CV</a></p>
+  </footer>
+</body>
 </html>
