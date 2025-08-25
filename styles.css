@@ -1,5 +1,29 @@
 /* styles.css */
 
+/* === THEME === */
+:root{
+  --bg:#0f1221;           /* page background */
+  --text:#eaf2ff;         /* body text */
+  --muted:#cbd6ff;        /* light text */
+  --accent:#7bdff2;       /* section headings / highlights */
+  --accent2:#ffa69e;      /* secondary accent */
+  --link:#7bdff2;         /* link color */
+  --link-visited:#ff686b; /* visited link color */
+}
+
+/* global surfaces */
+body{ background-color:var(--bg); color:var(--text); }
+
+/* headings & text */
+.content-section h2{ color:var(--accent); }
+.content-section h3, .content-section p{ color:var(--text); }
+
+/* links */
+a{ color:var(--link) !important; }
+a:hover{ color:var(--accent2) !important; text-decoration:underline; }
+a:visited{ color:var(--link-visited) !important; }
+
+
   body {
     font-family: 'Poppins';
     background-color: #1e1e1e;
