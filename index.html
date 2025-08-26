@@ -33,6 +33,18 @@
 
   <!-- favicon -->
   <link rel="icon" href="/images/icon.png" sizes="32x32" type="image/png">
+
+  <!-- Small helper styles to place icons to the side of the photo -->
+  <style>
+    .photo-icons-row{ display:flex; align-items:center; gap:16px; }
+    .buttons.side{ display:flex; flex-direction:column; gap:12px; margin:0; }
+    .buttons.side img{ width:48px; height:48px; }
+    /* On narrow screens, stack under the image so it stays tidy */
+    @media (max-width: 1000px){
+      .photo-icons-row{ flex-direction:column; }
+      .buttons.side{ flex-direction:row; }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -70,26 +82,29 @@
       </div>
 
       <div class="bio-right">
-        <!-- Update this to your own headshot path -->
-        <img
-          src="images/profile_pic.jpg"
-          alt="Saumya Chauhan"
-          class="profile-photo"
-        />
-        <div class="buttons">
-          <a href="https://github.com/Saumya-Chauhan-MHC" title="GitHub">
-            <img src="images/github_white.png" alt="GitHub Logo" style="width: 60px; height: 60px;">
-          </a>
-          <a href="mailto:saumya.s.chau@gmail.com" title="Email">
-            <img src="images/email_white.png" alt="Email Icon" style="width: 60px; height: 60px;">
-          </a>
-          <a href="https://www.linkedin.com/in/saumya-chauhan-3160301b3/" title="LinkedIn">
-            <img src="images/linkedin_white.png" alt="LinkedIn Logo" style="width: 60px; height: 60px;">
-          </a>
-          <!-- Optional: add your Scholar if available -->
-          <!-- <a href="YOUR_SCHOLAR_URL" title="Scholar">
-            <img src="images/scholar_white.png" alt="Scholar Logo" style="width: 60px; height: 60px;">
-          </a> -->
+        <!-- Image + icons side-by-side -->
+        <div class="photo-icons-row">
+          <!-- Update this to your own headshot path -->
+          <img
+            src="images/profile_pic.jpg"
+            alt="Saumya Chauhan"
+            class="profile-photo"
+          />
+          <div class="buttons side">
+            <a href="https://github.com/Saumya-Chauhan-MHC" title="GitHub">
+              <img src="images/github_white.png" alt="GitHub Logo">
+            </a>
+            <a href="mailto:saumya.s.chau@gmail.com" title="Email">
+              <img src="images/email_white.png" alt="Email Icon">
+            </a>
+            <a href="https://www.linkedin.com/in/saumya-chauhan-3160301b3/" title="LinkedIn">
+              <img src="images/linkedin_white.png" alt="LinkedIn Logo">
+            </a>
+            <!-- Optional: add your Scholar if available -->
+            <!-- <a href="YOUR_SCHOLAR_URL" title="Scholar">
+              <img src="images/scholar_white.png" alt="Scholar Logo">
+            </a> -->
+          </div>
         </div>
       </div>
     </section>
