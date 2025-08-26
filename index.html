@@ -34,15 +34,38 @@
   <!-- favicon -->
   <link rel="icon" href="/images/icon.png" sizes="32x32" type="image/png">
 
-  <!-- Small helper styles to place icons to the side of the photo -->
+  <!-- Helper styles: icons to the side of photo + force pub/talk images to the LEFT -->
   <style>
+    /* Photo + icons to the side */
     .photo-icons-row{ display:flex; align-items:center; gap:16px; }
     .buttons.side{ display:flex; flex-direction:column; gap:12px; margin:0; }
     .buttons.side img{ width:48px; height:48px; }
-    /* On narrow screens, stack under the image so it stays tidy */
-    @media (max-width: 1000px){
+    @media (max-width:1000px){
       .photo-icons-row{ flex-direction:column; }
       .buttons.side{ flex-direction:row; }
+    }
+
+    /* Publications / Talks: image on the LEFT (140px), text on the RIGHT */
+    .publications .publication{
+      display:grid;                 /* overrides any previous flex rules */
+      grid-template-columns: 140px 1fr; /* image left, text right */
+      gap: 16px;
+      align-items: start;
+      margin-bottom: 1.75rem;
+    }
+    .publications .publication .pub-image{ order:1; }
+    .publications .publication .pub-details{ order:2; }
+    .publications .publication .pub-image img{
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      display: block;
+    }
+    @media (max-width:900px){
+      .publications .publication{
+        grid-template-columns: 1fr;   /* stack on small screens */
+      }
+      .publications .publication .pub-image{ max-width: 220px; }
     }
   </style>
 </head>
@@ -100,7 +123,7 @@
             <a href="https://www.linkedin.com/in/saumya-chauhan-3160301b3/" title="LinkedIn">
               <img src="images/linkedin_white.png" alt="LinkedIn Logo">
             </a>
-            <!-- Optional: add your Scholar if available -->
+            <!-- Optional: Scholar -->
             <!-- <a href="YOUR_SCHOLAR_URL" title="Scholar">
               <img src="images/scholar_white.png" alt="Scholar Logo">
             </a> -->
@@ -136,37 +159,36 @@
 
       <div class="publications">
 
-        <!-- DETAILS FIRST, IMAGE SECOND (smaller) -->
         <div class="publication">
+          <div class="pub-image">
+            <img src="images/thumbs/virality-thumbnail.png" alt="Virality thumbnail">
+          </div>
           <div class="pub-details">
             <h3>When GenAI Meets Fake News: Understanding Image Cascade Dynamics on Reddit</h3>
             <p class="authors"><b>Saumya Chauhan</b>, M. Hong, M. Vazhaeparambil</p>
             <p class="venue"><em>Submitted to MIT URTC 2025</em></p>
           </div>
-          <div class="pub-image" style="flex:0 0 140px;margin-left:1rem;">
-            <img src="images/thumbs/virality-thumbnail.png" alt="Virality thumbnail" style="width:140px;height:auto;border-radius:4px;">
-          </div>
         </div>
 
         <div class="publication">
+          <div class="pub-image">
+            <img src="images/thumbs/itto-thumbnail.png" alt="ITTO thumbnail">
+          </div>
           <div class="pub-details">
             <h3>Is This Tracker On? A Benchmark Protocol for Dynamic Tracking (ITTO)</h3>
             <p class="authors">I. Demler, <b>Saumya Chauhan</b>, G. Gkioxari</p>
             <p class="venue"><em>Submitted to NeurIPS 2025</em></p>
           </div>
-          <div class="pub-image" style="flex:0 0 140px;margin-left:1rem;">
-            <img src="images/thumbs/itto-thumbnail.png" alt="ITTO thumbnail" style="width:140px;height:auto;border-radius:4px;">
-          </div>
         </div>
 
         <div class="publication">
+          <div class="pub-image">
+            <img src="images/thumbs/dmdiff-thumbnail.png" alt="Dark matter diffusion thumbnail">
+          </div>
           <div class="pub-details">
             <h3>Using Multi-Modal Diffusion Models to Reconstruct Dark Matter Fields</h3>
             <p class="authors"><b>Saumya Chauhan</b>, A. Chandrashekar, E. Patel, M. Vazhaeparambil</p>
             <p class="venue"><em>Submitted to Caltech–UChicago AI+Science 2025</em></p>
-          </div>
-          <div class="pub-image" style="flex:0 0 140px;margin-left:1rem;">
-            <img src="images/thumbs/dmdiff-thumbnail.png" alt="Dark matter diffusion thumbnail" style="width:140px;height:auto;border-radius:4px;">
           </div>
         </div>
 
@@ -178,35 +200,35 @@
       <h2>Posters / Talks</h2>
 
       <div class="publication">
+        <div class="pub-image">
+          <img src="images/thumbs/meeting-thumbnail.png" alt="Meeting of the Minds">
+        </div>
         <div class="pub-details">
           <h3>When GenAI Meets Fake News: Understanding Image Cascade Dynamics on Reddit</h3>
           <p class="authors"><b>Saumya Chauhan</b></p>
           <p class="venue"><em>CMS + IST Meeting of the Minds, Caltech, May 2025</em></p>
         </div>
-        <div class="pub-image" style="flex:0 0 140px;margin-left:1rem;">
-          <img src="images/thumbs/meeting-thumbnail.png" alt="Meeting of the Minds" style="width:140px;height:auto;border-radius:4px;">
-        </div>
       </div>
 
       <div class="publication">
+        <div class="pub-image">
+          <img src="images/thumbs/echoblue-thumbnail.png" alt="EchoBlue">
+        </div>
         <div class="pub-details">
           <h3>EchoBlue: AI Assistant for Caregivers of Children with Autism</h3>
           <p class="authors"><b>Saumya Chauhan</b> (Co-founder &amp; Technical Lead)</p>
           <p class="venue"><em>Nexus Horizon Builder SoCal Showcase &amp; Bill Gross Competition, Apr 2025</em></p>
         </div>
-        <div class="pub-image" style="flex:0 0 140px;margin-left:1rem;">
-          <img src="images/thumbs/echoblue-thumbnail.png" alt="EchoBlue" style="width:140px;height:auto;border-radius:4px;">
-        </div>
       </div>
 
       <div class="publication">
+        <div class="pub-image">
+          <img src="images/thumbs/verkada-thumbnail.png" alt="Verkada Tech Fair">
+        </div>
         <div class="pub-details">
           <h3>Real-Time Threat Detection on Edge Cameras with InternVideo2</h3>
           <p class="authors"><b>Saumya Chauhan</b></p>
           <p class="venue"><em>Verkada Spring Tech Fair, Mar 2025</em></p>
-        </div>
-        <div class="pub-image" style="flex:0 0 140px;margin-left:1rem;">
-          <img src="images/thumbs/verkada-thumbnail.png" alt="Verkada Tech Fair" style="width:140px;height:auto;border-radius:4px;">
         </div>
       </div>
 
@@ -218,5 +240,6 @@
   </footer>
 </body>
 </html>
+
 
 
