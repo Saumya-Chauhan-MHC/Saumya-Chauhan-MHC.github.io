@@ -1,219 +1,263 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+    <meta charset="UTF-8" />
     <title>Saumya Chauhan</title>
-
-    <meta name="author" content="Jon Barron">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
+    <meta name="author" content="Saumya Chauhan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
   </head>
 
   <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
+    <table style="width:100%;max-width:800px;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
+      <tbody>
+        <tr><td style="padding:0">
+          <!-- Header -->
+          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
+            <tbody><tr>
               <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Saumya Chauhan
-                </p>
-                <p>I'm an undergraduate at the California Institute of Technology (Caltech) and a Student Researcher at <a href="https://research.google/">Google Research</a>.
-                </p>
+                <p class="name" style="text-align:center;">Saumya Chauhan</p>
                 <p>
-                  At Caltech I have worked in the <a href="https://www.vision.caltech.edu/">Vision Lab</a>, and I currently work with <a href="https://www.yisongyue.com/">Yisong Yue</a> and <a href="http://fhalab.caltech.edu/">Frances Arnold</a>. I am also a researcher in the <a href="https://bair.berkeley.edu/">Berkeley AI Lab (BAIR)</a>.
+                  I’m a recent B.S. in Computer Science (Caltech ’25) focused on interpretable multimodal learning,
+                  robust evaluation, and responsible AI. I build datasets, tools, and models that help people make
+                  better decisions—especially in high-stakes or social settings. Recent work spans legal AI
+                  interpretability (RuleSum), dynamic point tracking (ITTO), autism-support assistants (SHARE),
+                  and misinformation/GenAI diffusion on Reddit. 
                 </p>
                 <p style="text-align:center">
-                  <a href="mailto:dkhalil@caltech.edu">Email</a> &nbsp;/&nbsp;
-                  <a href="data/JonBarron-CV.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=zxsPhfUAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://twitter.com/danielpkhalil">Twitter</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/danielpkhalil/">Github</a>
+                  <a href="mailto:saumya.s.chau@gmail.com">Email</a> &nbsp;/&nbsp;
+                  <a href="https://linkedin.com/in/saumya-chauhan-3160301b3">LinkedIn</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/Saumya-Chauhan-MHC">GitHub</a> &nbsp;/&nbsp;
+                  <a href="https://drive.google.com/file/d/1QNd8lB9qw5_JClaLDpuo33I4qFoCEbn5/view?usp=sharing">CV (PDF)</a>
                 </p>
               </td>
               <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/headshot.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/headshot.jpg" class="hoverZoomLink"></a>
+                <a href="images/headshot.jpg">
+                  <img style="width:100%;max-width:100%;object-fit:cover;border-radius:50%;" alt="profile photo" src="images/headshot.jpg" class="hoverZoomLink" />
+                </a>
               </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
+            </tr></tbody>
+          </table>
+
+          <!-- Research blurb -->
+          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
+            <tbody><tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I'm interested in creating general solutions to impactful problems with machine learning. Specifically, I am interested in reinforcement learning, continual/representation learning, and other stuff. Representative papers are <span class="highlight">highlighted</span>.
+                  I’m interested in: (1) safety, equity, and accountability in human–AI ecosystems and
+                  (2) interpretable assistive tools that augment human decision-making. Methodologically, I like
+                  exemplar-based interpretability, uncertainty-aware evaluation, and multimodal learning with
+                  careful, decision-level metrics. Representative papers are <span class="highlight">highlighted</span>.
                 </p>
               </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            </tr></tbody>
+          </table>
 
-            <tr onmouseout="sgpo_stop()" onmouseover="sgpo_start()">
-              <td style="padding: 20px; width: 25%; vertical-align: middle;">
-                <div class="one" style="height: 120px;">
-                  <div class="two" id='sgpo' style="height: 120px;">
-                    <img src='images/SGPO.png' width="160" style="border-style: none">
+          <!-- Publications -->
+          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
+            <tbody>
+
+              <!-- SHARE (AAAI 2026 Demo) -->
+              <tr onmouseout="share_stop()" onmouseover="share_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one" style="height:120px;">
+                    <div class="two" id="share" style="height:120px;">
+                      <img src="images/share.png" width="160" style="border-style:none">
+                    </div>
+                    <img src="images/share.png" width="160" style="border-style:none">
                   </div>
-                  <img src='images/SGPO.png' width="160" style="border-style: none">
-                </div>
-                <script type="text/javascript">
-                  function sgpo_start() {
-                    document.getElementById('sgpo').style.opacity = "1";
-                  }
-            
-                  function sgpo_stop() {
-                    document.getElementById('sgpo').style.opacity = "0";
-                  }
-                  sgpo_stop();
-                </script>
-              </td>
-              <td style="padding: 20px; width: 75%; vertical-align: middle;">
-                <a href="https://arxiv.org/abs/2505.15093v1">
-                  <span class="papertitle">Steering Generative Models with Experimental Data for Protein Fitness Optimization</span>
-                </a>
-                <br>
-                <a href="#">Jason Yang</a>,
-                <a href="#">Wenda Chu</a>,
-                <strong>Daniel Khalil</strong>,
-                <a href="#">Raul Astudillo</a>,
-                <a href="#">Bruce J. Wittmann</a>,
-                <a href="#">Frances H. Arnold</a>,
-                <a href="#">Yisong Yue</a>
-                <br>
-                <em>NeurIPS</em>, 2025 & <em>ICLR GEMBIO Workshop</em>, 2025
-                <br>
-                <a href="https://arxiv.org/abs/2505.15093v1">paper</a> /
-                <a href="https://github.com/jsunn-y/SGPO">code</a>
-                <p></p>
-              </td>
-            </tr>
+                  <script>
+                    function share_start(){document.getElementById('share').style.opacity="1";}
+                    function share_stop(){document.getElementById('share').style.opacity="0";}
+                    share_stop();
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://drive.google.com/file/d/1QNd8lB9qw5_JClaLDpuo33I4qFoCEbn5/view?usp=sharing">
+                    <span class="papertitle">SHARE: Synthesizing Heterogeneous Autism-support Records into Evidence-based Recommendations</span>
+                  </a>
+                  <br/><strong>Saumya Chauhan*</strong>, Mila Hong*<br/>
+                  <em>AAAI</em>, 2026 — Demonstrations Track
+                  <br/>
+                  <span class="highlight"><strong>In Proceedings</strong></span> · acceptance rate 72/253 (28%)
+                </td>
+              </tr>
 
-            <tr onmouseout="bkindmulti_stop()" onmouseover="bkindmulti_start()">
-              <td style="padding: 20px; width: 25%; vertical-align: middle;">
-                <div class="one" style="height: 120px; display: flex; justify-content: center; position: relative;">
-                  <div class="two" id="bkindmulti" style="height: 120px; position: absolute;">
-                    <img src="images/7human.gif" width="160" height="120" style="border-style: none; object-fit: contain;">
+              <!-- ITTO (NeurIPS 2025) -->
+              <tr onmouseout="itto_stop()" onmouseover="itto_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one" style="height:120px;">
+                    <div class="two" id="itto" style="height:120px;">
+                      <img src="images/itto.png" width="160" style="border-style:none">
+                    </div>
+                    <img src="images/itto.png" width="160" style="border-style:none">
                   </div>
-                  <img src="images/7human.png" width="160" height="120" style="border-style: none; object-fit: contain;">
-                </div>
-                <script type="text/javascript">
-                  function bkindmulti_start() {
-                    document.getElementById('bkindmulti').style.opacity = "1";
-                  }
-            
-                  function bkindmulti_stop() {
-                    document.getElementById('bkindmulti').style.opacity = "0";
-                  }
-                  bkindmulti_stop();
-                </script>
-              </td>
-              <td style="padding: 20px; width: 75%; vertical-align: middle;">
-                <a href="https://danielpkhalil.github.io/B-KinD-Multi/">
-                  <span class="papertitle">Learning Keypoints for Multi-Agent Behavior Analysis using Self-Supervision</span>
-                </a>
-                <br>
-                <strong>Daniel Khalil</strong>,
-                <a href="#">Christina Liu</a>,
-                <a href="#">Pietro Perona</a>,
-                <a href="#">Jennifer Sun</a>,
-                <a href="#">Markus Marks</a>
-                <br>
-                <em>WACV</em>, 2025 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-                <br>
-                <a href="https://danielpkhalil.github.io/B-KinD-Multi/">project page</a> /
-                <a href="#">video</a> /
-                <a href="https://www.arxiv.org/abs/2409.09455">arXiv</a>
-                <p></p>
-              </td>
-            </tr>
+                  <script>
+                    function itto_start(){document.getElementById('itto').style.opacity="1";}
+                    function itto_stop(){document.getElementById('itto').style.opacity="0";}
+                    itto_stop();
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle;">
+                  <a href="https://glab-caltech.github.io/ITTO/">
+                    <span class="papertitle">Is This Tracker On? A Benchmark Protocol for Dynamic Tracking (ITTO)</span>
+                  </a>
+                  <br/>Ilona Demler*, <strong>Saumya Chauhan*</strong>, Georgia Gkioxari<br/>
+                  <em>NeurIPS</em>, 2025 — <span class="highlight"><strong>In Proceedings</strong></span>
+                  <br/>
+                  <a href="https://glab-caltech.github.io/ITTO/">project</a>
+                </td>
+              </tr>
 
-          </tbody></table>
+              <!-- RuleSum (NeurIPS NORA 2025 Workshop) -->
+              <tr onmouseout="rulesum_stop()" onmouseover="rulesum_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one" style="height:120px;">
+                    <div class="two" id="rulesum" style="height:120px;">
+                      <img src="images/rulesum.png" width="160" style="border-style:none">
+                    </div>
+                    <img src="images/rulesum.png" width="160" style="border-style:none">
+                  </div>
+                  <script>
+                    function rulesum_start(){document.getElementById('rulesum').style.opacity="1";}
+                    function rulesum_stop(){document.getElementById('rulesum').style.opacity="0";}
+                    rulesum_stop();
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle;">
+                  <a href="https://openreview.net/forum?id=LoBdbazO6S">
+                    <span class="papertitle">RuleSum: Injecting Rulesets into Knowledge Graphs for Accurate and Accessible Legal Summarization</span>
+                  </a>
+                  <br/><strong>Saumya Chauhan*</strong>, Aditi Chandrashekar*<br/>
+                  <em>NeurIPS NORA Workshop</em>, 2025 — Knowledge Graphs &amp; Agentic Systems Interplay
+                  <br/>
+                  <a href="https://openreview.net/forum?id=LoBdbazO6S">openreview</a>
+                </td>
+              </tr>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <!-- RuleSum (SIGCSE SRC under review) -->
               <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/src.png" width="160" style="border-style:none">
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle;">
+                  <span class="papertitle">Injecting Rulesets into Knowledge Graphs for Accurate and Accessible Legal Summarization</span><br/>
+                  <strong>Saumya Chauhan*</strong>, Aditi Chandrashekar*<br/>
+                  <em>ACM SIGCSE 2026 Student Research Competition</em> — under review
+                </td>
+              </tr>
+
+              <!-- Reddit virality (MIT URTC 2025) -->
+              <tr onmouseout="reddit_stop()" onmouseover="reddit_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one" style="height:120px;">
+                    <div class="two" id="reddit" style="height:120px;">
+                      <img src="images/reddit.png" width="160" style="border-style:none">
+                    </div>
+                    <img src="images/reddit.png" width="160" style="border-style:none">
+                  </div>
+                  <script>
+                    function reddit_start(){document.getElementById('reddit').style.opacity="1";}
+                    function reddit_stop(){document.getElementById('reddit').style.opacity="0";}
+                    reddit_stop();
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle;">
+                  <a href="https://drive.google.com/file/d/1nxL7FpX_VGnuZNjc94RnD0MlW9TdNQ_g/view?usp=sharing">
+                    <span class="papertitle">When GenAI Meets Fake News: Understanding Image Cascade Dynamics on Reddit</span>
+                  </a>
+                  <br/><strong>Saumya Chauhan*</strong>, Mila Hong*, Maria Vazhaeparambil*<br/>
+                  <em>IEEE MIT URTC</em>, 2025 — Top-3 paper award (350+ submissions)
+                </td>
+              </tr>
+
+              <!-- IFoRE (Sigma Xi) -->
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/darkmatter.png" width="160" style="border-style:none">
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle;">
+                  <a href="https://events.projectboard.world/ifore2025/project/208070?preview=public">
+                    <span class="papertitle">Using Multi-Modal Diffusion Models to Reconstruct Dark Matter Fields</span>
+                  </a>
+                  <br/>Aditi Chandrashekar*, <strong>Saumya Chauhan*</strong>, Eshani Patel*, Maria Vazhaeparambil*<br/>
+                  <em>IFoRE Undergraduate Student Research Competition (Sigma Xi)</em>, 2025
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+
+          <!-- Projects -->
+          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
+            <tbody><tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Projects</h2>
-                <p>
-                  Here are some projects. Representative papers are <span class="highlight">highlighted</span>.
-                </p>
+                <p>Selected projects from research and internships.</p>
               </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            </tr></tbody>
+          </table>
 
-            <tr onmouseout="chexpert_stop()" onmouseover="chexpert_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one" style="height: 120px">
-                  <div class="two" id='xray' style="height: 120px">
-                    <img src='images/xray_inverted.jpg' width="160" style="border-style: none">
-                  </div>
-                  <img src='images/xray.jpg' width="160" style="border-style: none">
-                </div>
-                <script type="text/javascript">
-                  function chexpert_start() {
-                    document.getElementById('xray').style.opacity = "1";
-                  }
+          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
+            <tbody>
 
-                  function chexpert_stop() {
-                    document.getElementById('xray').style.opacity = "0";
-                  }
-                  chexpert_stop()
-                </script>
-              </td>
-              <td style="padding: 20px; width: 75%; vertical-align: middle;">
-                <a href="https://github.com/danielpkhalil/CS156b">
-                  <span class="papertitle">Chest X-Ray classifier</span>
-                </a>
-                <br>
-                <a href="https://github.com/danielpkhalil/CS156b">code</a>
-		<p>PyTorch implementations of several different classifiers for chest X-ray images, based on the multi-class and multi-label CheXpert dataset.</p>
-              </td>
-            </tr>
-          </tbody></table>
-					
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <!-- EchoBlue -->
               <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/echoblue.png" width="160" style="border-style:none">
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle;">
+                  <span class="papertitle">EchoBlue: AI Assistant for Autism Caregivers</span><br/>
+                  Dual-encoder (video + IEP) assistant with continual learning; 27 stakeholder interviews; finalist,
+                  Bill Gross Entrepreneurship Competition ($20K).
+                </td>
+              </tr>
+
+              <!-- Verkada -->
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/verkada.png" width="160" style="border-style:none">
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle;">
+                  <span class="papertitle">Real-Time Threat Detection on Edge Cameras</span><br/>
+                  InternVideo2-based pipeline with person-track cropping and lightweight classifier head for on-camera latency budgets; 20k-clip corpus and reproducible suite.
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+
+          <!-- Teaching & Awards -->
+          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
+            <tbody><tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Miscellanea</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/caltech.png" width="160" alt="caltech">
-              </td>
-              <td style="padding: 20px; width: 75%; vertical-align: middle;">
-                <a href="https://www.cms.caltech.edu/academics/courses/idsacmcs-157">TA, IDS 157 (Statistical Inference) Spring 2025</a>
-                <br>
-                <a href="https://www.cms.caltech.edu/academics/courses/cscnseeids-159">TA, CS 159 (Advanced Topics in Machine Learning) Spring 2025</a>
-                <br>
-                <a href="https://www.cms.caltech.edu/academics/courses/cs-38">TA, CS38 (Algorithms) Spring 2024</a>
-                <br>
-                <a href="https://home.work.caltech.edu/cs156/">TA, CS156a (Machine Learning) Fall 2024</a>
-              </td>
-            </tr>
-            
-            
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                  Website from <a href="https://github.com/jonbarron/jonbarron_website">John Barron</a>.
+                <h2>Teaching & Awards</h2>
+                <p>
+                  <strong>Teaching:</strong> CS 156a (Learning Systems) — TA; CS 38 (Algorithms) — TA; CS 2 (Data Structures) — TA; Ma/CS 6/106a — Head TA.
+                  <br/>
+                  <strong>Awards:</strong> MIT URTC 2025 Top-3 Paper; 2nd Place, Bill Gross Entrepreneurship Competition 2025; Housner Fund (UG research); Lam Research Core Values Scholarship; MLH “Hack Empowered” (2nd).
                 </p>
               </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
+            </tr></tbody>
+          </table>
+
+          <!-- Footer -->
+          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
+            <tbody><tr>
+              <td style="padding:0">
+                <br/>
+                <p style="text-align:right;font-size:small;">
+                  Website adapted from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
+                </p>
+              </td>
+            </tr></tbody>
+          </table>
+
+        </td></tr>
+      </tbody>
     </table>
   </body>
 </html>
+
